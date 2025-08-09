@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Jump</title>
+    <style>
+        /* Make the game responsive and centered */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #67e1ff;
+        }
+        canvas {
+            max-width: 100%;
+            background-color: #67e1ff;
+        }
+        /* Hide images used for the game */
+        #gameAssets {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game canvas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Preload game assets -->
+    <div id="gameAssets">
+        <img id="horseImage" src="images/horse.png" alt="Horse">
+        <img id="turtleImage" src="images/turtle.png" alt="Turtle">
+        <img id="catImage" src="images/cat.png" alt="Cat">
+        <img id="coinImage" src="images/coin.png" alt="Coin">
+    </div>
+
+    <!-- Game script -->
+    <script src="app.js"></script>
+</body>
+</html>
